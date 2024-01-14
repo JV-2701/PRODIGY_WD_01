@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* CSS for the header */
+header {
+    background-color: rgb(125, 10, 10);
+    padding: 32px;
+    height: 300px;
+    margin: 10px;
+    text-align: center; 
+}
+
+header h1 {
+    font-size: 40px; 
+    color: white;
+}
+
+header img {
+    border-radius: 100%;
+    width: 150px; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+main {
+    max-width: 95%; 
+    margin: 32px auto;
+    padding: 32px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+/* CSS for the search input */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem; 
+}
+
+#searchInput {
+    width: 100%; 
+}
+.results-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.results-container li  {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.search-icon {
+    padding: 10px;
+    width: 18px;
+    background-color: rgb(125, 10, 10);
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.search-icon:hover{
+    background-color: gray;
+}
+
+/* CSS for the content */
+.container {
+    max-width: 95%; 
+    margin: 0 auto;
+    display: grid;
+    /* Single column for smaller screens */
+    grid-template-columns: repeat(1, 1fr); 
+    grid-gap: 10px;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+}
+
+h2 {
+    /* Reduce font size for smaller screens */
+    font-size: 23px; 
+    text-align: center; 
+    background-color: rgb(125, 10, 10);
+    color: #fff;
+    border: 1px solid gray;
+    height: 31px;
+    width: 100%; 
+    margin-left: 0px;
+}
+
+.content img {
+    margin-left:1px;
+    width: 100%; 
+}
+
+p {
+    /* Reduce font size for smaller screens */
+    font-size: 16px; 
+    line-height: 1.5;
+    margin-left:3px;
+    width: 95%; 
+}
+
+.content p .btn1 {
+    text-decoration: none;
+    list-style: none;
+    color: rgb(125, 10, 10);
+    font-size: 18px;
+}
+
+/* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    main {
+        max-width: 95%;
+        padding: 20px;
+    }
+
+    .search-container {
+        margin-bottom: 1rem;
+    }
+
+    #searchInput {
+        width: 100%;
+    }
+
+    .content img {
+        width: 100%;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
